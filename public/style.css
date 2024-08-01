@@ -1,0 +1,143 @@
+/* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Banner styling */
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url(image.png);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navbar styling */
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 50px;
+    right: 20px;
+}
+
+/* Logo styling */
+.logo {
+    height: 20vh;
+    width: 120px;
+    cursor: pointer;
+    position: absolute;
+    top: 120px;
+    right: 50px; 
+}
+
+/* Navbar links */
+.navbar ul {
+    display: flex;
+    list-style: none;
+    align-items: cover; 
+    margin-top: 10px; 
+}
+
+/* Increase margin between list items */
+.navbar ul li {
+    margin: 0 10px; 
+    margin: 20px 18px; 
+}
+
+/* Styling for navbar links */
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px; 
+    padding: 20px 0; 
+    transition: color 0.3s ease, font-size 0.3s ease; 
+}
+
+/* Hover effect for navbar links */
+.navbar ul li a:hover {
+    color: #009688; 
+    font-size: 15px; 
+}
+
+/* Underline effect for navbar links */
+.navbar ul li a::after {
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: #009688;
+    display: block;
+    transition: width 0.3s ease; 
+}
+
+.navbar ul li a:hover::after {
+    width: 100%;
+}
+
+/* Content section */
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+/* Heading and paragraph styling */
+.content h1 {
+    font-size: 70px;
+    margin-top: 50px;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px;
+}
+
+/* Button styling */
+button {
+    width: 300px; 
+    padding: 15px 0; 
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 30px; 
+    font-weight: bold;
+    font-size: 16px;
+    border: 2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Button hover effect */
+button span {
+    background: #009688;
+    height: 100%;
+    width: 0%;
+    border-radius: 0px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s;
+}
+
+button:hover span {
+    width: 100%;
+}
+
+button:hover {
+    border: none;
+}
